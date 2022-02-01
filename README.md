@@ -84,17 +84,17 @@ Use the bus and device numbers listed by `lsusb` as shown above.
 
 Example run:
 
-    rohloff@mypc:~/linux_gadget$ ./usb_pc_tst /dev/bus/usb/002/009 echo
+    rohloff@mybc:~/linux_gadget$ ./usb_pc_tst /dev/bus/usb/002/008 echo
     checkUsbDevice : Device is using SuperSpeed
     scanEndpointDescriptors : Found bulk IN  endpoint 0x81
     scanEndpointDescriptors : Found bulk OUT endpoint 0x01
     Started write of 4 bytes to OUT EP
     Finished write of 4 bytes to OUT EP
     Running ECHO test
-    Transfering 4096 x 262128 bytes
-    Total time in usecs        : 5730276
-    Echo test successful, transferred 1073676288 bytes
-    bytes per second: 187369035
+    Transfering 4096 x 131056 bytes
+    Total time in usecs        : 1320378
+    Echo test successful, transferred 536805376 bytes
+    bytes per second: 406554317
 
 Depending on the setup of your Linux PC you might need to run the
 `usb_pc_tst` application as root; alternatively it might be possible to add

@@ -431,7 +431,7 @@ static void test_echo_run(void)
 
 	transferSz = 0x4000-0x10;
 	if (g.isSuperSpeed)
-		transferSz = 0x40000-0x10;
+		transferSz = 0x20000-0x10;
 
 	printf("Running ECHO test\n");
 	printf(
